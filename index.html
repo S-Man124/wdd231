@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sibusiso Manyoni's WDD 231 course home page for Web Frontend Development I.">
+
+    <meta name="author" content="Sibusiso Manyoni">
+
+    <title>WDD 231 | Sibusiso Manyoni</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <img src="images/logo.svg" alt="Sibusiso Manyoni logo">
+
+            <span>Sibusiso Manyoni</span>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+
+            <p>
+                My name is Sibusiso Manyoni. I am a Software Development
+                student interested in web development, artificial intelligence,
+                and technology.
+            </p>
+
+            <p>
+                I am developing my skills in HTML, CSS, JavaScript, and Python
+                as I work toward my degree.
+            </p>
+        </section>
+
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="course-buttons">
+                <button id="all-courses" type="button">All Courses</button>
+                <button id="wdd-courses" type="button">WDD Courses</button>
+                <button id="cse-courses" type="button">CSE Courses</button>
+            </div>
+
+            <p class="credits">
+                Total Credits:
+                <span id="total-credits">0</span>
+            </p>
+
+            <div id="course-list" class="course-list">
+                <!-- Courses will be displayed here using JavaScript -->
+            </div>
+        </section>
+
+        <section>
+            <h2>My Goals</h2>
+
+            <p>
+                My goal is to become a skilled software developer and continue
+                developing my knowledge in artificial intelligence,
+                web development, and emerging technologies.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="#" aria-label="Additional social media link">
+                Social
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Sibusiso Manyoni | South Africa
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

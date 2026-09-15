@@ -1,0 +1,100 @@
+/* ==============================
+   WDD 231 Course Home Page
+   Larger Screen Styles
+   ============================== */
+
+@media screen and (min-width: 32.5rem) {
+
+    /* ==============================
+       Header
+       ============================== */
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    /* ==============================
+       Navigation
+       ============================== */
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+        border-top: none;
+    }
+
+    /* ==============================
+       Main Content
+       ============================== */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* ==============================
+       About Section
+       ============================== */
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    /* ==============================
+       Course Buttons
+       ============================== */
+
+    .course-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .course-buttons button {
+        flex: 1;
+        max-width: 200px;
+    }
+
+    /* ==============================
+       Course Cards
+       ============================== */
+
+    .course-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ==============================
+       Goals Section
+       ============================== */
+
+    .goals {
+        min-height: 150px;
+    }
+}
+
+/* ==============================
+   Wide Screens
+   ============================== */
+
+@media screen and (min-width: 50rem) {
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
