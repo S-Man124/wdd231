@@ -98,3 +98,7 @@
         padding: 1.5rem;
     }
 }
+
+.student-photo {
+    justify-self: center;
+}
