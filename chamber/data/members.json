@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Rainscents Business Solutions",
+        "address": "100 Main Street, Johannesburg, Gauteng",
+        "phone": "+27 79 517 2544",
+        "website": "https://www.rainscents.co.za/",
+        "image": "image 1.webp",
+        "membership": 3,
+        "description": "Connected Business Systems for Smarter Growth."
+    },
+    {
+        "name": "AdaptSA Business Solutions",
+        "address": "22 Magwa Crescent, Waterfall City, Midrand, Johannesburg, 2066",
+        "phone": "+27 10 007 0690",
+        "website": "https://www.adaptsa.co.za/",
+        "image": "image 2.webp",
+        "membership": 2,
+        "description": "Accounting, tax, advisory, web and email services; Johannesburg-area office."
+    },
+    {
+        "name": "Mecer Business Solutions",
+        "address": "322 15th Road, Randjespark, Midrand, 1685",
+        "phone": "+27 (0)11 237 1000",
+        "website": "https://mecer.co.za/",
+        "image": "image 3.webp",
+        "membership": 3,
+        "description": "Connected Business Systems for Smarter Growth."
+    },
+    {
+        "name": "690 Signature Group",
+        "address": "23 Taaibos St, Noordwyk, Midrand, 1687",
+        "phone": "+27 10 007 0690",
+        "website": "https://690signaturegroup.co.za",
+        "image": "image 4.webp",
+        "membership": 2,
+        "description": "Young, dynamic and innovative consulting company."
+    },
+    {
+        "name": "Innovation Signs",
+        "address": "24B Central Ave, Kempton Park Cbd, Kempton Park, 1619",
+        "phone": "+27 73 938 1757",
+        "website": "https://innovationsigns.co.za/",
+        "image": "image 5.webp",
+        "membership": 3,
+        "description": "Graphic design, printing and branding solutions."
+    },
+    {
+        "name": "Mustek Limited",
+        "address": "322 15th Rd, Randjespark, Midrand, 1685",
+        "phone": "+27 10 007 0690",
+        "website": "https://mustek.co.za/",
+        "image": "image 6.webp",
+        "membership": 2,
+        "description": "Assembles and sells computers under its local brand, Mecer, alongside products from major international IT brands."
+    },
+     {
+        "name": "Fuyakomo Technologies",
+        "address": "9 Taurog Rd, Wright Park, Springs, 1559",
+        "phone": "+27 11 813 3056",
+        "website": "https://fuyakomotechnologies.co.za/",
+        "image": "image 7.webp",
+        "membership": 3,
+        "description": "Professional Solutions Services in the ICT Sector."
+    },
+    {
+        "name": "Mzimkhulu Holdings",
+        "address": "10 South Boulevard Road Suite 108 Egoli East, Bruma, Johannesburg, 2198",
+        "phone": "+27 11 615 4291",
+        "website": "https://mzimkhulu.co.za/",
+        "image": "image 8.webp",
+        "membership": 2,
+        "description": "Accounting, Taxation and Business Consulting."
+    },
+    {
+        "name": "S-Man Group",
+        "address": "23 Northrand Road, Kempton Park, 1619",
+        "phone": "+27 72 965 9228",
+        "website": "https://www.smangroup.co.za/",
+        "image": "image 9.webp",
+        "membership": 3,
+        "description": "IT support, software and web development."
+    }
+]

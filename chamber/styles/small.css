@@ -1,0 +1,346 @@
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #007749;
+    --accent-color: #f4b41a;
+    --light-color: #f4f7f9;
+    --white-color: #ffffff;
+    --dark-color: #1f2933;
+    --border-color: #d9e2ec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem;
+}
+
+.site-branding {
+    text-align: center;
+}
+
+.site-branding h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.site-branding p {
+    margin: 0.25rem 0 0;
+}
+
+#menu-button {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--white-color);
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0.25rem 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+main > h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.directory-controls button {
+    padding: 0.6rem 1.25rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.directory-controls button:hover,
+.directory-controls button:focus {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    padding: 1.25rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+}
+
+.member-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.member-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.member-card a {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.member-list .member-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.member-list .member-card img {
+    display: none;
+}
+
+.member-list .member-card h3,
+.member-list .member-card p {
+    margin: 0.25rem 0;
+}
+
+.membership-level {
+    font-weight: 700;
+}
+
+.membership-levels {
+    margin: 2rem 0;
+}
+
+.membership-levels h3 {
+    color: var(--primary-color);
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.25rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+}
+
+.membership-card h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.membership-card a {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+dialog {
+    width: min(90%, 500px);
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+dialog li {
+    margin-bottom: 0.5rem;
+}
+
+.close-dialog {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.close-dialog:hover,
+.close-dialog:focus {
+    background-color: var(--secondary-color);
+}
+
+.join-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+.join-form label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 700;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    background-color: var(--white-color);
+}
+
+.join-form textarea {
+    resize: vertical;
+}
+
+.join-form button {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.join-form button:hover,
+.join-form button:focus {
+    background-color: var(--secondary-color);
+}
+
+#submission-details {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+}
+
+#submission-details h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+#form-results p {
+    margin: 0.75rem 0;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+footer h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+}

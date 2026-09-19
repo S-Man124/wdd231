@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Join the Johannesburg Business Chamber and connect with businesses in Johannesburg, Gauteng."
+    >
+    <meta name="author" content="Sibusiso Lawrence Manyoni">
+
+    <title>Johannesburg Business Chamber | Join</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/membership.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-branding">
+            <h1>Johannesburg Business Chamber</h1>
+            <p>Johannesburg, Gauteng</p>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+            <ul id="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+
+                <li>
+                    <a href="join.html">
+                        Join
+                    </a>
+                </li>
+
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join the Johannesburg Business Chamber</h2>
+
+        <p>
+            Complete the form below to express your interest in joining the
+            Johannesburg Business Chamber.
+        </p>
+
+        <section class="membership-levels">
+            <h3>Membership Levels</h3>
+
+            <div class="membership-cards">
+
+                <article class="membership-card">
+                    <h4>NP Membership</h4>
+                    <p>For nonprofit organizations.</p>
+                    <a href="#np-dialog" class="benefit-link" data-dialog="np-dialog">
+                        View Benefits
+                    </a>
+                </article>
+
+                <article class="membership-card">
+                    <h4>Bronze Membership</h4>
+                    <p>For businesses starting their chamber journey.</p>
+                    <a href="#bronze-dialog" class="benefit-link" data-dialog="bronze-dialog">
+                        View Benefits
+                    </a>
+                </article>
+
+                <article class="membership-card">
+                    <h4>Silver Membership</h4>
+                    <p>For established businesses seeking additional opportunities.</p>
+                    <a href="#silver-dialog" class="benefit-link" data-dialog="silver-dialog">
+                        View Benefits
+                    </a>
+                </article>
+
+                <article class="membership-card">
+                    <h4>Gold Membership</h4>
+                    <p>For businesses seeking the full range of chamber benefits.</p>
+                    <a href="#gold-dialog" class="benefit-link" data-dialog="gold-dialog">
+                        View Benefits
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="membership-benefits">
+            <dialog
+                id="np-dialog"
+                aria-labelledby="np-title">
+                <h3 id="np-title">NP Membership Benefits</h3>
+                <ul>
+                    <li>Access to chamber networking opportunities.</li>
+                    <li>Business community information and updates.</li>
+                    <li>Opportunities to participate in chamber activities.</li>
+                </ul>
+                <button type="button" class="close-dialog">Close</button>
+            </dialog>
+
+            <dialog
+                id="bronze-dialog"
+                aria-labelledby="bronze-title">
+
+                <h3 id="bronze-title">Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Networking opportunities.</li>
+                    <li>Business community information and updates.</li>
+                    <li>Participation in selected chamber events.</li>
+                    <li>Basic business promotion opportunities.</li>
+                </ul>
+                <button type="button" class="close-dialog">Close</button>
+            </dialog>
+
+           <dialog
+                id="silver-dialog"
+                aria-labelledby="silver-title">
+
+                <h3 id="silver-title">Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze membership benefits.</li>
+                    <li>Additional networking opportunities.</li>
+                    <li>Business promotion opportunities.</li>
+                    <li>Access to selected training and workshops.</li>
+                </ul>
+                <button type="button" class="close-dialog">Close</button>
+            </dialog>
+
+            <dialog
+                id="gold-dialog"
+                aria-labelledby="gold-title">
+
+                <h3 id="gold-title">Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver membership benefits.</li>
+                    <li>Enhanced business promotion opportunities.</li>
+                    <li>Priority access to selected chamber activities.</li>
+                    <li>Additional networking and business development opportunities.</li>
+                </ul>
+                <button type="button" class="close-dialog">Close</button>
+            </dialog>
+        </section>
+
+        <form id="membership" method="get" action="thankyou.html" class="join-form">
+
+            <label for="first-name">
+                First Name
+                <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    title="Enter your first name"
+                    autocomplete="given-name"
+                    required>
+            </label>
+
+            <label for="last-name">
+                Last Name
+                <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    title="Enter your last name"
+                    autocomplete="family-name"
+                    required>
+            </label>
+
+            <label for="email">
+                Email
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    title="Enter your email address"
+                    autocomplete="email"
+                    placeholder="example@email.com"
+                    required>
+            </label>
+
+            <label for="phone">
+                Mobile Phone
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    title="Enter your mobile phone number"
+                    autocomplete="tel"
+                    required>
+            </label>
+
+            <label for="organization">
+                Business / Organization Name
+                <input
+                    type="text"
+                    id="organization"
+                    name="organization"
+                    title="Enter your business or organization name"
+                    autocomplete="organization"
+                    required>
+            </label>
+
+            <label for="title">
+                Organizational Title
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    title="Enter your organizational title"
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\s\-]{7,}"
+                    required>
+            </label>
+
+            <label for="membership">
+                Membership Level
+                <select
+                    id="membership"
+                    name="membership"
+                    title="Select a membership level"
+                    required>
+                    <option value="" disabled selected>
+                        Select a membership level
+                    </option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label for="description">
+                Business / Organization Description
+                <textarea
+                    id="description"
+                    name="description"
+                    title="Enter a description of your business or organization"
+                    rows="5"></textarea>
+            </label>
+
+            <input
+                type="hidden"
+                name="timestamp"
+                id="timestamp">
+
+            <button type="submit">Submit Membership Application</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="contact-information">
+            <h2>Johannesburg Business Chamber</h2>
+            <p>Johannesburg, Gauteng, South Africa</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +27 11 000 0000</p>
+        </div>
+
+        <div class="development-information">
+            <p>Sibusiso Lawrence Manyoni</p>
+            <p>WDD 231 Web Frontend Development I</p>
+            <p>&copy; <span id="current-year"></span> Johannesburg Business Chamber</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
