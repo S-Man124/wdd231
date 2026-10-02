@@ -1,4 +1,6 @@
+
 @media screen and (min-width: 700px) {
+    /* Header */
 
     header {
         display: grid;
@@ -15,6 +17,8 @@
     #menu-button {
         display: none;
     }
+
+    /* Navigation */
 
     nav {
         display: block;
@@ -34,12 +38,12 @@
         padding: 0.75rem 1rem;
     }
 
-        /* Chamber Home Page */
+    /* Chamber Home Page */
 
     .hero-content {
-        left: 2rem;
         right: auto;
         bottom: 2rem;
+        left: 2rem;
         max-width: 600px;
         padding: 1.5rem;
     }
@@ -60,16 +64,16 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Main Content */
+
     main {
         padding: 2rem;
     }
 
-    .member-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    /* Directory */
 
-    .membership-cards {
-        grid-template-columns: repeat(2, 1fr);
+    .member-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .member-list .member-card {
@@ -77,16 +81,19 @@
         align-items: center;
     }
 
-    .member-list .member-card h3 {
-        margin: 0;
-    }
-
+    .member-list .member-card h3,
     .member-list .member-card p {
         margin: 0;
     }
 
+    /* Membership Join Page */
+
+    .membership-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .join-form {
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .join-form label:nth-of-type(3),
@@ -97,22 +104,26 @@
         grid-column: 1 / -1;
     }
 
+    /* Footer */
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        text-align: left;
         padding: 2rem;
+        text-align: left;
     }
 }
 
-@media screen and (min-width: 1000px) {
+/* Desktop Membership Layout */
 
-    .member-grid {
-        grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: 900px) {
+    .join-layout {
+        grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+        gap: 2rem;
     }
 
-    .membership-cards {
-        grid-template-columns: repeat(4, 1fr);
+    .join-layout .membership-cards {
+        grid-template-columns: minmax(0, 1fr);
     }
 }

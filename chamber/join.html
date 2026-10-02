@@ -76,45 +76,153 @@
             Johannesburg Business Chamber.
         </p>
 
-        <section class="membership-levels">
-            <h3>Membership Levels</h3>
+        <div class="join-layout">
 
-            <div class="membership-cards">
+            <form id="membership-form" method="get" action="thankyou.html" class="join-form">
 
-                <article class="membership-card">
-                    <h4>NP Membership</h4>
-                    <p>For nonprofit organizations.</p>
-                    <a href="#np-dialog" class="benefit-link" data-dialog="np-dialog">
-                        View Benefits
-                    </a>
-                </article>
+                <label for="first-name">
+                    First Name
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        title="Enter your first name"
+                        autocomplete="given-name"
+                        required>
+                </label>
 
-                <article class="membership-card">
-                    <h4>Bronze Membership</h4>
-                    <p>For businesses starting their chamber journey.</p>
-                    <a href="#bronze-dialog" class="benefit-link" data-dialog="bronze-dialog">
-                        View Benefits
-                    </a>
-                </article>
+                <label for="last-name">
+                    Last Name
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        title="Enter your last name"
+                        autocomplete="family-name"
+                        required>
+                </label>
 
-                <article class="membership-card">
-                    <h4>Silver Membership</h4>
-                    <p>For established businesses seeking additional opportunities.</p>
-                    <a href="#silver-dialog" class="benefit-link" data-dialog="silver-dialog">
-                        View Benefits
-                    </a>
-                </article>
+                <label for="email">
+                    Email
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        title="Enter your email address"
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required>
+                </label>
 
-                <article class="membership-card">
-                    <h4>Gold Membership</h4>
-                    <p>For businesses seeking the full range of chamber benefits.</p>
-                    <a href="#gold-dialog" class="benefit-link" data-dialog="gold-dialog">
-                        View Benefits
-                    </a>
-                </article>
+                <label for="phone">
+                    Mobile Phone
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        title="Enter your mobile phone number"
+                        autocomplete="tel"
+                        required>
+                </label>
 
-            </div>
-        </section>
+                <label for="organization">
+                    Business / Organization Name
+                    <input
+                        type="text"
+                        id="organization"
+                        name="organization"
+                        title="Enter your business or organization name"
+                        autocomplete="organization"
+                        required>
+                </label>
+
+                <label for="title">
+                    Organizational Title
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        title="Enter your organizational title"
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}"
+                        required>
+                </label>
+
+                <label for="membership-level">
+                    Membership Level
+                    <select
+                        id="membership-level"
+                        name="membership"
+                        title="Select a membership level"
+                        required>
+                        <option value="" disabled selected>
+                            Select a membership level
+                        </option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">
+                    Business / Organization Description
+                    <textarea
+                        id="description"
+                        name="description"
+                        title="Enter a description of your business or organization"
+                        rows="5"></textarea>
+                </label>
+
+                <input
+                    type="hidden"
+                    name="timestamp"
+                    id="timestamp">
+
+                <button type="submit">Submit Membership Application</button>
+
+            </form>
+
+            <section class="membership-levels">
+                <h3>Membership Levels</h3>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+                        <h4>NP Membership</h4>
+                        <p>For nonprofit organizations.</p>
+                        <a href="#np-dialog" class="benefit-link" data-dialog="np-dialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h4>Bronze Membership</h4>
+                        <p>For businesses starting their chamber journey.</p>
+                        <a href="#bronze-dialog" class="benefit-link" data-dialog="bronze-dialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h4>Silver Membership</h4>
+                        <p>For established businesses seeking additional opportunities.</p>
+                        <a href="#silver-dialog" class="benefit-link" data-dialog="silver-dialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h4>Gold Membership</h4>
+                        <p>For businesses seeking the full range of chamber benefits.</p>
+                        <a href="#gold-dialog" class="benefit-link" data-dialog="gold-dialog">
+                            View Benefits
+                        </a>
+                    </article>
+
+                </div>
+            
+            </section>
+        </div>
 
         <section class="membership-benefits">
             <dialog
@@ -172,110 +280,6 @@
             </dialog>
         </section>
 
-        <form id="membership" method="get" action="thankyou.html" class="join-form">
-
-            <label for="first-name">
-                First Name
-                <input
-                    type="text"
-                    id="first-name"
-                    name="first-name"
-                    title="Enter your first name"
-                    autocomplete="given-name"
-                    required>
-            </label>
-
-            <label for="last-name">
-                Last Name
-                <input
-                    type="text"
-                    id="last-name"
-                    name="last-name"
-                    title="Enter your last name"
-                    autocomplete="family-name"
-                    required>
-            </label>
-
-            <label for="email">
-                Email
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    title="Enter your email address"
-                    autocomplete="email"
-                    placeholder="example@email.com"
-                    required>
-            </label>
-
-            <label for="phone">
-                Mobile Phone
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    title="Enter your mobile phone number"
-                    autocomplete="tel"
-                    required>
-            </label>
-
-            <label for="organization">
-                Business / Organization Name
-                <input
-                    type="text"
-                    id="organization"
-                    name="organization"
-                    title="Enter your business or organization name"
-                    autocomplete="organization"
-                    required>
-            </label>
-
-            <label for="title">
-                Organizational Title
-                <input
-                    type="text"
-                    id="title"
-                    name="title"
-                    title="Enter your organizational title"
-                    autocomplete="organization-title"
-                    pattern="[A-Za-z\s\-]{7,}"
-                    required>
-            </label>
-
-            <label for="membership">
-                Membership Level
-                <select
-                    id="membership"
-                    name="membership"
-                    title="Select a membership level"
-                    required>
-                    <option value="" disabled selected>
-                        Select a membership level
-                    </option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
-
-            <label for="description">
-                Business / Organization Description
-                <textarea
-                    id="description"
-                    name="description"
-                    title="Enter a description of your business or organization"
-                    rows="5"></textarea>
-            </label>
-
-            <input
-                type="hidden"
-                name="timestamp"
-                id="timestamp">
-
-            <button type="submit">Submit Membership Application</button>
-
-        </form>
     </main>
 
     <footer>
