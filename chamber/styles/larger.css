@@ -104,6 +104,26 @@
         grid-column: 1 / -1;
     }
 
+    /* Discover Page - Medium */
+
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+    }
+
+    .discover-card img {
+        transition: filter 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        filter: brightness(0.85);
+    }
+
     /* Footer */
 
     footer {
@@ -125,5 +145,24 @@
 
     .join-layout .membership-cards {
         grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .discover-card h2 {
+        height: 3.5rem;
+        margin: 0 0 0.75rem;
+        display: block;
+        line-height: 1.35;
     }
 }
