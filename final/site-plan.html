@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The website plan for SafeSignal South Africa, a community safety and incident information website.">
+    <meta name="author" content="Sibusiso Manyoni">
+    <title>SafeSignal South Africa | Website Plan</title>
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>SafeSignal South Africa</h1>
+        <p>Community Safety &amp; Incident Information</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Site Name</h2>
+            <p><strong>SafeSignal South Africa</strong></p>
+            <p>
+                The name combines "Safe" with "Signal" to represent sharing
+                useful safety information and making community members aware
+                of potential hazards. "South Africa" identifies the intended
+                audience and geographic focus.
+            </p>
+            <p><strong>Proposed domain:</strong> safesignal.co.za
+                (availability not verified)</p>
+        </section>
+
+        <section>
+            <h2>2. Site Purpose</h2>
+            <p>
+                SafeSignal South Africa is an educational community
+                information website that presents safety resources and
+                incident information in an accessible, organized format.
+                Visitors will be able to browse incident records, search
+                and filter information, explore safety guidance, and submit
+                an incident information form.
+            </p>
+            <p>
+                The project will demonstrate responsive web design,
+                JavaScript, JSON data, asynchronous fetching, browser
+                storage, and accessible user interactions. It is not an
+                official emergency reporting or dispatch service.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Target Audience and Scenarios</h2>
+            <h3>Target Audience</h3>
+            <p>
+                South African community members looking for general safety
+                information, public incident updates, preparedness guidance,
+                and useful emergency contacts.
+            </p>
+
+            <h3>Visitor Scenarios</h3>
+            <ul>
+                <li>
+                    Where can I find information about reported road hazards
+                    or flooding in my area?
+                </li>
+                <li>
+                    How can I filter incident information by category and
+                    view more details about a record?
+                </li>
+                <li>
+                    Which emergency contact numbers and preparedness
+                    resources should I know?
+                </li>
+                <li>
+                    How can I submit information about a potential community
+                    safety concern?
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Color Scheme</h2>
+            <p>
+                The site uses a restrained navy, teal, light grey, and white
+                palette to create a clear and consistent information
+                interface.
+            </p>
+
+            <ul class="color-list">
+                <li>
+                    <span class="swatch navy"></span>
+                    <strong>Navy — #123047:</strong>
+                    Header, footer, primary headings, and strong text.
+                </li>
+                <li>
+                    <span class="swatch teal"></span>
+                    <strong>Teal — #287D78:</strong>
+                    Links, buttons, highlights, and interactive elements.
+                </li>
+                <li>
+                    <span class="swatch light"></span>
+                    <strong>Light grey — #F3F6F8:</strong>
+                    Page background and content sections.
+                </li>
+                <li>
+                    <span class="swatch white"></span>
+                    <strong>White — #FFFFFF:</strong>
+                    Cards, text on dark backgrounds, and open content areas.
+                </li>
+            </ul>
+            <p>
+                Text and interactive elements will be checked with a
+                contrast checker. Color will not be the only way to
+                communicate incident categories or status.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Typography</h2>
+            <h3 class="font-example">Inter — Headings</h3>
+            <p>
+                Inter will be used for headings because its clean letterforms
+                support a modern, readable interface.
+            </p>
+
+            <p class="font-example">
+                Inter — Body text
+            </p>
+            <p>
+                The same font will be used for paragraphs, navigation,
+                labels, buttons, and forms to maintain consistency and
+                readability across devices.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Website Structure</h2>
+            <h3>Home — index.html</h3>
+            <p>
+                Introduces the purpose of SafeSignal, highlights selected
+                safety information, and provides navigation to incidents
+                and safety resources.
+            </p>
+
+            <h3>Incident Directory — incidents.html</h3>
+            <p>
+                Displays at least 15 incident information records generated
+                from JSON data. Visitors can search and filter records and
+                open an accessible dialog for additional details. Each
+                record will contain at least four data properties.
+            </p>
+
+            <h3>Safety Resources — resources.html</h3>
+            <p>
+                Provides emergency contact information, preparedness advice,
+                hazard prevention guidance, and links to relevant public
+                resources.
+            </p>
+
+            <h3>Supporting Form Action Page</h3>
+            <p>
+                The incident information form will submit to
+                form-action.html, which will display the submitted form
+                values. This supporting page does not count toward the
+                three-page site requirement.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Planned Functionality</h2>
+            <ul>
+                <li>Responsive navigation with a mobile menu.</li>
+                <li>Fetch JSON data asynchronously with error handling.</li>
+                <li>Generate incident cards dynamically with JavaScript.</li>
+                <li>Search, filter, and sort incident information.</li>
+                <li>Use an accessible modal dialog for record details.</li>
+                <li>Use localStorage to remember a visitor preference.</li>
+                <li>Validate and display submitted form data.</li>
+                <li>Use ES modules and appropriate array methods.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>8. Wireframes</h2>
+            <p>
+                I will create my own black-and-white wireframe sketches
+                for the home page in two viewport sizes.
+            </p>
+
+            <h3>Small Viewport — Mobile</h3>
+            <p>
+                Sketch a compact header with a menu button, a vertically
+                stacked introduction, a prominent incidents link, a small
+                safety highlights area, and a footer.
+            </p>
+            <p><strong>My mobile wireframe:</strong> Add my own sketch here.</p>
+
+            <h3>Large Viewport — Desktop</h3>
+            <p>
+                Sketch a horizontal navigation, a wider introductory area,
+                a two-column section for featured safety information and
+                quick links, and a footer.
+            </p>
+            <p><strong>My desktop wireframe:</strong> Add my own sketch here.</p>
+        </section>
+
+        <section>
+            <h2>9. Testing and Quality Assurance</h2>
+            <ul>
+                <li>Validate HTML with the W3C Markup Validator.</li>
+                <li>Check accessibility using WAVE.</li>
+                <li>Test color contrast with WebAIM Contrast Checker.</li>
+                <li>Run Lighthouse for accessibility, best practices,
+                    SEO, and performance.</li>
+                <li>Test responsive layouts at 320px and wider.</li>
+                <li>Check keyboard navigation and modal behavior.</li>
+                <li>Check for JavaScript errors in browser DevTools.</li>
+                <li>Verify that the published GitHub Pages site works.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>SafeSignal South Africa | WDD231 Individual Project Plan</p>
+        <p>Prepared by Sibusiso Manyoni</p>
+    </footer>
+</body>
+</html>

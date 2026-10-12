@@ -1,0 +1,34 @@
+
+.header-content {
+    flex-wrap: nowrap;
+}
+
+#menu-button {
+    display: none;
+}
+
+#primary-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+}
+
+#primary-navigation a {
+    white-space: nowrap;
+}
+
+.hero {
+    padding: 5rem 0;
+}
+
+.card-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.categories,
+.information {
+    padding-block: 3rem;
+}
+

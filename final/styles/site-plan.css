@@ -1,0 +1,136 @@
+
+/* SafeSignal South Africa — Site Plan */
+
+:root {
+    --color-navy: #123047;
+    --color-teal: #287D78;
+    --color-light: #F3F6F8;
+    --color-white: #FFFFFF;
+    --font-main: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--color-navy);
+    background-color: var(--color-light);
+    line-height: 1.6;
+}
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-navy);
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: min(100% - 2rem, 900px);
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    border-top: 4px solid var(--color-teal);
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--color-navy);
+    border-bottom: 2px solid var(--color-light);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--color-teal);
+}
+
+a {
+    color: var(--color-teal);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.color-list {
+    list-style: none;
+    padding: 0;
+}
+
+.color-list li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.swatch {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border: 1px solid #64748B;
+    border-radius: 4px;
+}
+
+.navy {
+    background-color: #123047;
+}
+
+.teal {
+    background-color: #287D78;
+}
+
+.light {
+    background-color: #F3F6F8;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.font-example {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-navy);
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
