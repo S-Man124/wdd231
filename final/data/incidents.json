@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"title":"Pothole on Main Road","category":"Road Hazard","location":"Kempton Park","date":"2026-09-15","status":"Reported","description":"A large pothole is affecting a section of the roadway."},
+  {"id":2,"title":"Flooded Roadway","category":"Flooding","location":"Benoni","date":"2026-09-16","status":"In Progress","description":"Standing water is affecting a low-lying road."},
+  {"id":3,"title":"Streetlight Outage","category":"Infrastructure","location":"Boksburg","date":"2026-09-17","status":"Reported","description":"Several streetlights are not operating."},
+  {"id":4,"title":"Traffic Signal Fault","category":"Road Hazard","location":"Germiston","date":"2026-09-18","status":"Resolved","description":"A traffic signal has experienced an electrical fault."},
+  {"id":5,"title":"Blocked Stormwater Drain","category":"Flooding","location":"Springs","date":"2026-09-19","status":"Reported","description":"Debris is blocking a stormwater drain."},
+  {"id":6,"title":"Damaged Power Cabinet","category":"Infrastructure","location":"Alberton","date":"2026-09-20","status":"In Progress","description":"A roadside electrical cabinet is damaged."},
+  {"id":7,"title":"Unsafe Pedestrian Crossing","category":"Road Hazard","location":"Tembisa","date":"2026-09-21","status":"Reported","description":"Road markings at a pedestrian crossing have faded."},
+  {"id":8,"title":"Waterlogged Underpass","category":"Flooding","location":"Edenvale","date":"2026-09-22","status":"Resolved","description":"Heavy rain has caused water accumulation in an underpass."},
+  {"id":9,"title":"Exposed Utility Wiring","category":"Infrastructure","location":"Nigel","date":"2026-09-23","status":"Reported","description":"Utility wiring is exposed near a public walkway."},
+  {"id":10,"title":"Road Surface Damage","category":"Road Hazard","location":"Brakpan","date":"2026-09-24","status":"In Progress","description":"The road surface has deteriorated near an intersection."},
+  {"id":11,"title":"Overflowing Drainage Channel","category":"Flooding","location":"Daveyton","date":"2026-09-25","status":"Reported","description":"A drainage channel is overflowing after rainfall."},
+  {"id":12,"title":"Water Supply Pipe Leak","category":"Infrastructure","location":"KwaThema","date":"2026-09-26","status":"Resolved","description":"A damaged pipe has caused water leakage."},
+  {"id":13,"title":"Missing Road Sign","category":"Road Hazard","location":"Tsakane","date":"2026-09-27","status":"Reported","description":"A road sign is missing near a busy junction."},
+  {"id":14,"title":"Blocked Culvert","category":"Flooding","location":"Duduza","date":"2026-09-28","status":"In Progress","description":"A culvert is obstructed by accumulated debris."},
+  {"id":15,"title":"Public Lighting Failure","category":"Infrastructure","location":"Katlehong","date":"2026-09-29","status":"Reported","description":"Public lighting is not functioning along a pedestrian route."}
+]

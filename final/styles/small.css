@@ -164,3 +164,103 @@ footer a {
     }
 }
 
+
+/* Incident directory refinements */
+
+#incident-search,
+#category-filter {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    min-height: 44px;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1.25rem;
+    font: inherit;
+    border: 1px solid #64748b;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#incident-list .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#incident-list .card button {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0.7rem 1rem;
+    min-height: 44px;
+    background-color: var(--teal);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#incident-list .card button:hover {
+    background-color: var(--navy);
+}
+
+#incident-list .card button:focus-visible {
+    outline: 3px solid var(--navy);
+    outline-offset: 3px;
+}
+
+#incident-list {
+    margin-bottom: 2rem;
+}
+
+
+/* Safety resources and incident form */
+
+main.container section {
+    margin-block: 2rem;
+}
+
+.incident-form {
+    display: grid;
+    gap: 0.6rem;
+    max-width: 650px;
+    padding: 1.5rem;
+    background: var(--light);
+    border-radius: 8px;
+}
+
+.incident-form label {
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.incident-form input,
+.incident-form select,
+.incident-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0.8rem;
+    font: inherit;
+    border: 1px solid #64748b;
+    border-radius: 5px;
+    background: var(--white);
+}
+
+.incident-form .button {
+    border: none;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    justify-self: start;
+}
+
+#submission-details dt {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+#submission-details dd {
+    margin: 0.25rem 0 1rem;
+    overflow-wrap: anywhere;
+}

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore road, flood and infrastructure safety guidance and submit a demonstration incident information form.">
+    <meta name="author" content="Sibusiso Manyoni">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Safety Resources | SafeSignal South Africa">
+    <meta property="og:description" content="Practical community safety guidance for South African residents.">
+    <meta property="og:url" content="https://s-man124.github.io/wdd231/final/resources.html">
+    <title>Safety Resources | SafeSignal South Africa</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="brand" href="index.html">◆ SafeSignal South Africa</a>
+            <button id="menu-button" type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation">☰</button>
+            <nav id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="incidents.html">Incidents</a>
+                <a href="resources.html" aria-current="page">Safety Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Community Safety Resources</h1>
+        <p>Practical information to help South African communities recognize hazards and respond safely.</p>
+
+        <section aria-labelledby="guidance-heading">
+            <h2 id="guidance-heading">Safety and Preparedness</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Road Hazards</h3>
+                    <p>Reduce speed near damaged roads and keep a safe following distance.</p>
+                    <p>Report dangerous road conditions through the appropriate municipal channels.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Flooding</h3>
+                    <p>Never attempt to drive or walk through moving floodwater.</p>
+                    <p>Move away from flooded low-lying areas and follow official weather warnings.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Electrical Hazards</h3>
+                    <p>Stay away from fallen power lines, exposed wiring and damaged electrical cabinets.</p>
+                    <p>Contact the relevant electricity provider or emergency service.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Community Preparedness</h3>
+                    <p>Keep emergency contacts accessible and prepare a basic emergency kit.</p>
+                    <p>Share verified safety information rather than unconfirmed rumours.</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="contacts-heading">
+            <h2 id="contacts-heading">Emergency Assistance</h2>
+            <p>For immediate emergencies in South Africa, use the appropriate emergency service.</p>
+            <p><strong>112:</strong> Emergency assistance from a mobile phone.</p>
+            <p><strong>10111:</strong> South African Police Service emergency line.</p>
+            <p><strong>10177:</strong> Ambulance and emergency medical assistance.</p>
+            <p>Availability may vary. Confirm local municipal emergency contacts for your area.</p>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Incident Information Form</h2>
+            <p>This form is for educational demonstration only. It does not submit information to emergency authorities.</p>
+
+            <form action="form-action.html" method="get" class="incident-form">
+                <label for="reporter-name">Your Name</label>
+                <input id="reporter-name" name="reporter" type="text"
+                    required minlength="2" maxlength="80" autocomplete="name">
+
+                <label for="reporter-email">Email Address</label>
+                <input id="reporter-email" name="email" type="email"
+                    required autocomplete="email">
+
+                <label for="incident-category">Incident Category</label>
+                <select id="incident-category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="Road Hazard">Road Hazard</option>
+                    <option value="Flooding">Flooding</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="incident-location">General Location</label>
+                <input id="incident-location" name="location" type="text"
+                    required maxlength="100"
+                    placeholder="e.g. Kempton Park">
+
+                <label for="incident-description">Incident Description</label>
+                <textarea id="incident-description" name="description"
+                    required minlength="10" maxlength="500"
+                    rows="5"></textarea>
+
+                <button class="button" type="submit">Preview Information</button>
+            </form>
+            <p><small>Do not enter sensitive personal information or details of a real emergency. Submitted values appear in the browser URL.</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SafeSignal South Africa</p>
+        <p>Developed by Sibusiso Manyoni | WDD231</p>
+        <p><a href="attributions.html">Attributions</a> |
+        <a href="VIDEO_URL" class="video-link">Project Demonstration Video</a></p>
+    </footer>
+</body>
+</html>

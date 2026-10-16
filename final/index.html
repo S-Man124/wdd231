@@ -4,31 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | SafeSignal South Africa</title>
+
     <meta name="description"
-          content="Explore community safety information, incident categories and preparedness resources in South Africa.">
+          content="SafeSignal South Africa provides educational community incident information, road safety guidance, and emergency preparedness resources.">
+
     <meta name="author" content="Sibusiso Manyoni">
-    <title>Home | South African Incident Information Hub</title>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="SafeSignal South Africa | Incident Information Hub">
+    <meta property="og:description"
+          content="Safer communities start with information. Explore incident categories and safety resources in South Africa.">
+    <meta property="og:url"
+          content="https://s-man124.github.io/wdd231/final/">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/svg+xml"
+          href="images/favicon.svg">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet"
           href="styles/large.css"
           media="(min-width: 768px)">
+
+    <!-- JavaScript -->
     <script type="module" src="scripts/main.js"></script>
 </head>
+
 <body>
     <header>
         <div class="header-content">
             <a class="brand" href="index.html">
                 <span aria-hidden="true">◆</span>
-                Incident Information Hub
+                SafeSignal South Africa
             </a>
+
             <button id="menu-button"
                     type="button"
-                    aria-label="Toggle navigation"
+                    aria-label="Open navigation"
                     aria-expanded="false"
                     aria-controls="primary-navigation">
                 ☰
             </button>
-            <nav id="primary-navigation" aria-label="Main navigation">
+
+            <nav id="primary-navigation"
+                 aria-label="Main navigation">
                 <a href="index.html" aria-current="page">Home</a>
                 <a href="incidents.html">Incidents</a>
                 <a href="resources.html">Safety Resources</a>
@@ -37,68 +62,137 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <h1>Safer Communities Start with Information</h1>
+
                 <p>
-                    Discover community safety information, incident
-                    categories, and practical preparedness resources
-                    for South African communities.
+                    Discover community safety information,
+                    incident categories, and practical
+                    preparedness resources for South African
+                    communities.
                 </p>
+
                 <a class="button" href="incidents.html">
                     Explore Incidents
                 </a>
             </div>
         </section>
 
-        <section class="container categories">
-            <h2>Explore Safety Topics</h2>
+        <!-- Safety Topics -->
+        <section class="container categories"
+                 aria-labelledby="topics-heading">
+            <h2 id="topics-heading">Explore Safety Topics</h2>
+
             <div class="card-grid">
                 <article class="card">
                     <h3>Road Hazards</h3>
-                    <p>Learn about road incidents and unsafe conditions.</p>
+                    <p>
+                        Learn about road incidents, potholes,
+                        damaged traffic signals, and unsafe
+                        road conditions.
+                    </p>
                 </article>
+
                 <article class="card">
                     <h3>Flooding</h3>
-                    <p>Explore flood risks and preparedness information.</p>
+                    <p>
+                        Explore flood risks, blocked drainage
+                        systems, and practical flood
+                        preparedness information.
+                    </p>
                 </article>
+
                 <article class="card">
                     <h3>Infrastructure</h3>
-                    <p>Understand common infrastructure-related hazards.</p>
+                    <p>
+                        Understand common infrastructure
+                        hazards, including electrical faults,
+                        water leaks, and lighting failures.
+                    </p>
                 </article>
+
                 <article class="card">
                     <h3>Safety Resources</h3>
-                    <p>Find practical community safety guidance.</p>
+                    <p>
+                        Find practical community safety
+                        guidance, preparedness information,
+                        and emergency assistance resources.
+                    </p>
+                    <a href="resources.html">
+                        View Safety Resources
+                    </a>
                 </article>
             </div>
         </section>
 
-        <section class="container information">
-            <h2>About This Project</h2>
+        <!-- About Section -->
+        <section class="container information"
+                 aria-labelledby="about-heading">
+            <h2 id="about-heading">About SafeSignal South Africa</h2>
+
             <p>
-                The South African Incident Information Hub is an
-                educational website demonstrating how web technology
-                can organize community incident information and
-                improve access to safety resources.
+                SafeSignal South Africa is an educational
+                Incident Information Hub demonstrating how
+                modern web technology can organize community
+                incident information and improve access to
+                safety and preparedness resources.
             </p>
+
             <p>
-                Incident records displayed on this website are
-                illustrative examples and are not verified live
+                This website was developed as an individual
+                project for WDD231: Web Frontend Development I.
+                It demonstrates responsive web design,
+                JavaScript functionality, JSON data integration,
+                and accessible user interactions.
+            </p>
+
+            <p>
+                <strong>Important:</strong>
+                All incident records displayed on this website
+                are fictional demonstration examples.
+                They are not verified live incidents or
                 emergency alerts.
             </p>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="container information"
+                 aria-labelledby="action-heading">
+            <h2 id="action-heading">
+                Explore Community Incident Information
+            </h2>
+
+            <p>
+                Browse incident examples, filter records
+                by category, and learn how community
+                information can support safer environments.
+            </p>
+
+            <a class="button" href="incidents.html">
+                Browse Incident Directory
+            </a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="current-year"></span>
-           South African Incident Information Hub</p>
-        <p>Developed by Sibusiso Manyoni | WDD231</p>
+        <p>
+            &copy; <span id="current-year"></span>
+            SafeSignal South Africa
+        </p>
+
+        <p>
+            Developed by Sibusiso Manyoni | WDD231
+        </p>
+
         <p>
             <a href="attributions.html">Attributions</a>
             <span> | </span>
-            <a href="#" id="video-link">Project Video (coming soon)</a>
+            <a href="#" id="video-link">
+                Project Demonstration Video (pending)
+            </a>
         </p>
     </footer>
 </body>
 </html>
-

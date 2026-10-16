@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Incident Directory | SafeSignal South Africa</title>
+
+    <meta name="description"
+          content="Browse fictional South African community incident records by category, location and status.">
+
+    <meta name="author" content="Sibusiso Manyoni">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="Incident Directory | SafeSignal South Africa">
+    <meta property="og:description"
+          content="Browse educational incident records and explore common community safety hazards in South Africa.">
+    <meta property="og:url"
+          content="https://s-man124.github.io/wdd231/final/incidents.html">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/svg+xml"
+          href="images/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet"
+          href="styles/large.css"
+          media="(min-width: 768px)">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/incidents.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="brand" href="index.html">
+                <span aria-hidden="true">◆</span>
+                SafeSignal South Africa
+            </a>
+
+            <button id="menu-button"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation"
+                 aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="incidents.html" aria-current="page">Incidents</a>
+                <a href="resources.html">Safety Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Community Incident Directory</h1>
+
+        <p>
+            Browse demonstration incident records and
+            explore common community hazards.
+        </p>
+
+        <p>
+            <strong>Disclaimer:</strong>
+            All records are fictional examples and are
+            not live emergency alerts.
+        </p>
+
+        <!-- Search and Filtering -->
+        <section aria-labelledby="filter-heading">
+            <h2 id="filter-heading">Find Incident Information</h2>
+
+            <label for="incident-search">
+                Search by title or location
+            </label>
+
+            <input type="search"
+                   id="incident-search"
+                   placeholder="Search incidents">
+
+            <label for="category-filter">
+                Filter by category
+            </label>
+
+            <select id="category-filter">
+                <option value="all">All categories</option>
+                <option value="Road Hazard">Road Hazard</option>
+                <option value="Flooding">Flooding</option>
+                <option value="Infrastructure">Infrastructure</option>
+                <option value="Other">Other</option>
+            </select>
+        </section>
+
+        <!-- Incident Results -->
+        <section aria-labelledby="results-heading">
+            <h2 id="results-heading">Incident Records</h2>
+
+            <p id="results-count" aria-live="polite"></p>
+
+            <div id="incident-list" class="card-grid"></div>
+        </section>
+    </main>
+
+    <!-- Incident Details Dialog -->
+    <dialog id="incident-dialog"
+            aria-labelledby="dialog-title">
+        <h2 id="dialog-title">Incident Details</h2>
+
+        <div id="dialog-content"></div>
+
+        <button type="button"
+                id="close-dialog"
+                class="button">
+            Close
+        </button>
+    </dialog>
+
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span>
+            SafeSignal South Africa
+        </p>
+
+        <p>
+            Developed by Sibusiso Manyoni | WDD231
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+            <span> | </span>
+            <a href="#" class="video-link">
+                Project Demonstration Video (pending)
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
